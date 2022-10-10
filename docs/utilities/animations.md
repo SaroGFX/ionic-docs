@@ -104,6 +104,7 @@ import { CreateAnimation, Animation } from '@ionic/react';
     property: 'opacity',
     fromValue: '1',
     toValue: '0.5'
+    play={true}
   }}
 >
 ...
@@ -179,6 +180,7 @@ this.animationCtrl.create()
 <CreateAnimation
   duration={1500}
   iterations={Infinity}
+  play={true}
   fromTo={[
     { property: 'transform', fromValue: 'translateX(0px)', toValue: 'translateX(100px)' },
     { property: 'opacity', fromValue: '1', toValue: '0.2' }
@@ -270,6 +272,7 @@ this.animationCtrl.create()
 <CreateAnimation
   duration={3000}
   iterations={Infinity}
+  play={true}
   keyframes={[
     { offset: 0, background: 'red' },
     { offset: 0.72, background: 'var(--background)' },
