@@ -100,6 +100,7 @@ import { CreateAnimation, Animation } from '@ionic/react';
 
 <CreateAnimation
   duration={1000}
+  play={true}
   fromTo={{
     property: 'opacity',
     fromValue: '1',
@@ -179,6 +180,7 @@ this.animationCtrl.create()
 <CreateAnimation
   duration={1500}
   iterations={Infinity}
+  play={true}
   fromTo={[
     { property: 'transform', fromValue: 'translateX(0px)', toValue: 'translateX(100px)' },
     { property: 'opacity', fromValue: '1', toValue: '0.2' }
@@ -270,6 +272,7 @@ this.animationCtrl.create()
 <CreateAnimation
   duration={3000}
   iterations={Infinity}
+  play={true}
   keyframes={[
     { offset: 0, background: 'red' },
     { offset: 0.72, background: 'var(--background)' },
@@ -755,6 +758,7 @@ render() {
         ref={this.squareARef}
         fill="none"
         duration={1000}
+        
         keyframes={[
           { offset: 0, transform: 'scale(1) rotate(0)' },
           { offset: 0.5, transform: 'scale(1.2) rotate(45deg)' },
@@ -1234,6 +1238,7 @@ this.animationCtrl.create()
   duration={1500}
   iterations={Infinity}
   direction='alternate'
+  play={true]
   fromTo={{
     property: 'background',
     fromValue: 'blue',
